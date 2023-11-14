@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+/*cabeçalho*/
+
+#layout {
+    background-color: #d88d6d18;
+    width: 1000px;
+}
+
+#pai1 {
+    display: flex;
+    background-color: #1d1314;
+    width: 1000px;
+    height: 80px;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+
+
+.glow-on-hover {
+    width: 150px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 25px;
+
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff00003b, #ff730049, #fffb0033, #48ff0021, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+input {
+    background-color: #000;
+    width: 300px;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 80px;
+}
+
+#instrumento{
+    border: 2px  solid rgb(116, 109, 106);
+}
+
+#carrinho {
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+    height: 30px;
+    margin-top: 24px;
+    margin-left: 20px;
+}
+
+input {
+    color: rgb(44, 25, 70);
+    
+}
+#textos{
+    margin-left: 10px;
+}
+
+#pessoa {
+    margin-top: 27px;
+    margin-left: 10px;
+    height: 25px;
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+}
+
+#login {
+    margin-top: 23px;
+}
+
+#produto{
+    display:flex ;
+}
+h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#preco{
+    color: green;
+}
+h4{
+    margin-top: 10px;
+}
+
+button{
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+
+#rodapeP {
+    display: flex;
+    background-color: #000000;
+    justify-content: space-around;
+    margin-top: 20PX;
+}
+
+.roda {
+    color: #bdbdbd;
+
+}
