@@ -137,7 +137,7 @@ input {
 
 .cartoes {
     margin-top: 20px;
-    background-color: #d88d6d18;
+    background-color: rgba(48, 20, 8, 0.2);
      border: 4px  solid rgb(37, 11, 1);
 transition: 3s;  font-size: 20px;
     cursor: pointer;

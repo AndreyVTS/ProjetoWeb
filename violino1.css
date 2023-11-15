@@ -10,7 +10,8 @@ body {
 /*cabeçalho*/
 
 #layout {
-    background-color: #d88d6d18;
+    background-color: rgba(48, 20, 8, 1);
+   
     width: 1000px;
 }
 
